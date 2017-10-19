@@ -11,7 +11,7 @@ console.log(werewolf)
 
 monsters.push(werewolf)
 
-const vampire = new Monster("Vampire", ["blood", "apple fritters", "wine"], "http://globe-views.com/dcim/dreams/vampire/vampire-04.jpg")
+const vampire = new Monster("Vampire", ["blood", "apple fritters", "wine"], "https://i.ytimg.com/vi/7n2kSeUqHeg/hqdefault.jpg")
 console.log(vampire)
 
 monsters.push(vampire)

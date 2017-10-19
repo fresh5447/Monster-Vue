@@ -13,13 +13,14 @@
     <div class="jumbotron meJumbo">
       <h3>{{ title }} </h3>
     </div>
-    <div class="monsters-list">
+    <div class="monsters-container">
       <div v-for="m in monsters" class="monster-card">
         <h3>{{m.name}}</h3>
         <img :src="m.img"/>
-        <ul>
-          <li v-for="item in m.diet"> {{item}} </li>
-        </ul>
+        <h5>Diet</h5>
+        <div class="monster-diet-list">
+          <span v-for="item in m.diet" class="monster-diet-item"> {{item}} <span/>
+        </div>
       </div>
     </div>
   </div>

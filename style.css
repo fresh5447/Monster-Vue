@@ -3,18 +3,41 @@ body {
 }
 
 .meJumbo {
-  color: #ecf0f1;
   background-color: #2c3e50;
+  color: #ecf0f1;
 }
 
-.monsters-list {
+.monsters-container {
+  align-items: baseline;
   background-color: #95a5a6;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .monster-card {
+  align-items: center;
   border: solid 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
+  width: calc(33.3333% - 20px);
 }
 
 img {
   max-width: 75%;
+}
+
+.monster-diet-list {
+  display: flex;
+}
+
+.monster-diet-item {
+  background-color: #e67e22;
+  border-radius: 20px;
+  border: solid 3px #d35400;
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;
 }

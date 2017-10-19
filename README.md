@@ -27,3 +27,13 @@
 __yes I said that twice 😜__
 
 ----
+
+3) Use flexbox to create a card style layout.
+
+- Define a card to be 1/3 of the screen.
+- Use the margin `calc` trick to get some nice spacing.
+- Layout the cards using flexbox.
+- Apply flexbox so that the Card items get flex layout.
+- Ditch the `li`, and use span tags instead, so we can lay them out using flexbox.
+
+*I had to fix the vampire img in this commit*
