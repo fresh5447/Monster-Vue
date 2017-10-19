@@ -37,3 +37,8 @@ __yes I said that twice 😜__
 - Ditch the `li`, and use span tags instead, so we can lay them out using flexbox.
 
 *I had to fix the vampire img in this commit*
+
+4) Submit a new Monster Part 1: Form Setup
+
+- Grab a form from bootstrap
+- Update the fields to be name, image, and diet

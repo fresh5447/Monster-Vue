@@ -7,16 +7,27 @@ body {
   color: #ecf0f1;
 }
 
+.form-container {
+  background-color: #2c3e50;
+  border-radius: 15px;
+  color: #ecf0f1;
+  margin-top: 20px;
+  padding: 30px;
+}
+
 .monsters-container {
   align-items: baseline;
   background-color: #95a5a6;
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .monster-card {
   align-items: center;
+  background-color: #ecf0f1;
   border: solid 3px black;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
