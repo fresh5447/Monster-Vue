@@ -1,5 +1,7 @@
 # Checklist
 
+----
+
 1) Setup basic project structure to include an `index.html`, `style.css`, and `app.js`
 
 - Setup the basic HTML
@@ -7,3 +9,21 @@
 - Add a test to `app.js` to ensure it is hooked up.
 - Connect `bootstrap`
 - Connect `Vue`
+
+----
+
+2) Create the Monster Connector and pass the data to Vue.
+*Be sure to do lot's of smoke tests along the way*
+
+- Define the monster constructor.
+- Use the constructor to make several monster.
+- Store the monsters in an Array
+- Create a Vue app
+- Display the monsters using the Vue app.
+- Do some minimal CSS
+
+*Be sure to do lot's of smoke tests along the way*
+
+__yes I said that twice 😜__
+
+----
