@@ -7,12 +7,10 @@ function Monster(name, diet, img) {
 const monsters = []
 
 const werewolf = new Monster("Werewolf", ["people", "candy"], "https://media-elerium.cursecdn.com/avatars/74/179/636163941522787261.jpg")
-console.log(werewolf)
 
 monsters.push(werewolf)
 
 const vampire = new Monster("Vampire", ["blood", "apple fritters", "wine"], "https://i.ytimg.com/vi/7n2kSeUqHeg/hqdefault.jpg")
-console.log(vampire)
 
 monsters.push(vampire)
 
@@ -28,13 +26,30 @@ const zombie = new Monster("Zombie", ["brains", "split pea soup"], "https://i.pi
 
 monsters.push(zombie)
 
-console.log(monsters)
-
 const monsterModel = {
   el: '#monster-app',
   data: {
     title: 'Monster Mash',
-    monsters: monsters
+    monsters: monsters,
+    newMonsterName: '',
+    newMonsterImg: '',
+    newMonsterDiet: '',
+  },
+  methods: {
+    submitMonster: function() {
+      // alert("function triggered")
+      // console.log(this.newMonsterName, this.newMonsterImg, this.newMonsterDiet)
+      const name = this.newMonsterName
+      const diet = this.newMonsterDiet.split(' ')
+      const img = this.newMonsterImg
+      console.log(name, diet, img)
+      const monster = new Monster(name, diet, img)
+      this.monsters.push(monster) // UI will auto update as data changes
+      // RESET THE FORM
+      this.newMonsterName = ''
+      this.newMonsterImg = ''
+      this.newMonsterDiet = ''
+    }
   }
 }
 

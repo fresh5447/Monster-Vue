@@ -24,19 +24,19 @@
       </div>
     </div>
     <div class="form-container">
-      <form>
+      <form  v-on:submit.prevent="submitMonster">
         <div class="form-group">
           <label>Name</label>
-          <input type="text" class="form-control"placeholder="Enter monster name">
+          <input type="text" class="form-control"placeholder="Enter monster name" v-model="newMonsterName">
         </div>
         <div class="form-group">
           <label>Image</label>
-          <input type="text" class="form-control" placeholder="Image">
+          <input type="text" class="form-control" placeholder="Image" v-model="newMonsterImg">
           <small class="form-text text-muted">Please enter a valid email</small>          
         </div>
         <div class="form-group">
           <label>Diet</label>
-          <input type="text" class="form-control" placeholder="Image">
+          <input type="text" class="form-control" placeholder="Diet items" v-model="newMonsterDiet">
           <small class="form-text text-muted">Please enter items seperated by commans</small>          
         </div>
         <button type="submit" class="btn btn-secondary">Submit</button>

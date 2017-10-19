@@ -42,3 +42,14 @@ __yes I said that twice 😜__
 
 - Grab a form from bootstrap
 - Update the fields to be name, image, and diet
+
+5) Submit a new Monster Part 2: Form Submit
+
+- Attach an onSubmit function to the form (be sure to attach it to the `Form` tag)
+- Create the method in your Vue Model
+- Start with a console.log to ensure it is working.
+- Attach v-models to each of the input fields to caputre the information
+- Use the information captured to construct a new monster
+- Push the new monster to the monsters data
+
+*Tip: You can not use lamda functions for the `methods` section.
